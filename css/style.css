@@ -8,6 +8,10 @@ header {
     align-items: center;
     gap: 279px;
 background: hsl(30, 97%, 13%);
+position: fixed;
+width: 100%;
+ top: 0;
+z-index: 1000;
 }
 
 
@@ -18,8 +22,21 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
 }
 
+
+
+.home :hover{
+    color: #c75555;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
 
 .active {
     color: #D5906E;
@@ -157,6 +174,17 @@ margin-left: 158px;
 }
 
 
+.button1 :hover {
+    width: 160px;
+    height: 40px;
+    color: #000;
+
+
+}
+
+
+
+
 .span1 {
     color: #B53B1B;
     font-family: Inter;
@@ -165,6 +193,13 @@ margin-left: 158px;
     font-weight: 400;
     line-height: 24px; 
 }
+
+
+
+
+
+
+
 
 
 
@@ -412,8 +447,17 @@ line-height: 20px; /* 166.667% */
 
 
 
+.div_same{
+    width: 282px;
+    background: #FFF;
+    display: flex;
+}
 
 
+.div_same:hover{
+
+    background: #dd9a9a;
+}
 
 
 .div2_image {
@@ -565,6 +609,17 @@ padding: 19px 190px 20px 20px;
 .search button{
     border-radius: 0px 10px 10px 0px;
 background: #FFF;
+color: #402101;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 122.222% */
+}
+
+.search button:hover{
+    border-radius: 0px 10px 10px 0px;
+background: #bb5252;
 color: #402101;
 font-family: Inter;
 font-size: 18px;
@@ -768,19 +823,11 @@ line-height: 48px;
 
 .contact_search{
     position: absolute;
-margin: -340px 700px;
+margin: -270px 700px;
 display: flex;
 }
 
 .contact_search p {
-    /* border-radius: 10px 0px 0px 10px;
-background: #D5906E;
-color: #FFF;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; */
 padding: 19px 190px 20px 20px;
 border-radius: 10px;
 border: 2px solid #FFF;
@@ -823,6 +870,23 @@ font-weight: 400;
 line-height: 26px;
 }
 
+.contact_search button:hover{
+    border-radius: 0px 10px 10px 0px;
+    background: #a45d4c;
+display: flex;
+height: 56px;
+padding: 15px 53px 15px 54px;
+justify-content: center;
+align-items: center;
+border-radius: 0px 10px 10px 0px;
+background: #ff3f0f;
+color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+}
 
 
 
@@ -885,6 +949,20 @@ margin: 40px;
 }
 
 
+.artworks_card:hover {
+
+    display: flex;
+    width: 400px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    border-radius: 8px;
+    background: #FFF;
+    margin: 40px;
+    }
+    
 
 .product_name {
     color: #B53B1B;
@@ -1096,6 +1174,18 @@ line-height: 17px; /* 121.429% */
     color: #FFF;
 }
 
+
+.send-button:hover{
+    color: #e76363;
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 10px;
+    background: #ff9f92;
+    color: #FFF;
+}
+
 #message{
     height: 100px;
 }
@@ -1168,4 +1258,92 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+}
+
+
+
+
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-30px);
+    }
+    
+}
+
+.map {
+    width: 200px;
+    height: 200px;
+    animation: bounce 3s infinite;
+}
+
+/* burger */
+.responsive-nav{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 237, 243);
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+}
+
+.responsive-nav.active{
+    display: block;
+}
+.responsive-nav li{
+    list-style: none;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.responsive-nav a{
+    color: #0a22bb;
+}
+ .burger-menu div{
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+ }
+
+ .active .line2{
+    display: none;
+
+ }
+
+ .active .line1{
+    transform: translate(-50%, -50%) rotate(-50deg);
+    width: 40px;
+    margin-top: 30px;
+  
+ }
+ .active .line3{
+    transform: translate(-50%, -50%) rotate(50deg);
+    width: 40px;
+    margin-top: -13px;
+ }
+
+ .line{
+    transition: all 0.5s linear;
+
+ }
+.burger-menu{
+    display: none;
+    margin-top: 20px;
+}
+
+.burger-menu{
+    opacity: 0;
+}
+
+.responsive-nav li{
+    display: none;
 }
