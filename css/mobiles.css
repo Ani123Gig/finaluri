@@ -193,6 +193,21 @@ flex-shrink: 0;
     margin-left: -250px;
 }
 
+
+.burger-menu{
+    display: block;
+}
+
+.responsive-nav li{
+    display: block;
+}
+  
+.responsive-nav{
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: -200px;
+}
+
 .burger-menu{
     display: block;
 }
