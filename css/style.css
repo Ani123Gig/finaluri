@@ -886,6 +886,7 @@ line-height: normal;
     font-size: 24px; 
     font-weight: bold; 
     text-align: center; 
+    margin-left: -450px;  
   
 }
 
@@ -895,13 +896,14 @@ line-height: normal;
 
 .contact_text1 {
     color: #FFF;
-text-shadow: 4px 4px 2px #581504;
-font-family: Inter;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px; 
-margin-bottom: 400px;
+    text-shadow: 4px 4px 2px #581504;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+    margin-bottom: 200px;
+    margin-left: 90px;
 }
 
 
@@ -987,7 +989,7 @@ line-height: 26px;
     align-items: center;
     background: #EA904F;
     row-gap: 72px;
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 
@@ -1031,6 +1033,9 @@ line-height: 26px;
     border-radius: 8px;
     background: #FFF;
    
+}
+.artworks_card:hover{
+    background-color: #581504;
 }
 
 .artworks_card_img {
@@ -1284,6 +1289,7 @@ textarea{
 }
 
 .map_cont{
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     
