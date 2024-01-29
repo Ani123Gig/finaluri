@@ -1,217 +1,92 @@
-/* 
 
+@media (max-width: 745px) {
+    .container{
 
-@media (max-width:744px) {
+        max-width: 745px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #FAFAFA;
+    }
     header {
-        padding: 20px 10px;
-        gap: 15px; 
+        height: 96px ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width:745px;
+        width: 100%;
+        column-gap: 59px;
+        background: hsl(30, 97%, 13%);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    
     }
-
-    .ulclul {
-        margin-left: 10px; 
-    }
-
-    .divheader {
-        column-gap: 10px; 
-    }
-
-}
-
-
-@media (max-width: 744px) 
-{}
-    .section1 {
-        height: 400px; 
-
-}
-
-.section2 {
-}
-
-@media (max-width: 744px) {
-    .section2 {
-        padding: 15px; 
-    }
-
-}
-
-.section3 {
-}
-
-
-@media (max-width: 744px) {
-    .section3 {
-        height: 400px; }
-
-}
-
-footer {
-}
-
-@media (max-width: 744px) {
-    footer {
-        padding: 30px 10px; 
-        column-gap: 15px;
-    }
-
-}
- */
-
-
- @media (max-width: 745px) {
-    header {
-        padding: 26px 15px; /* Adjust padding for header at 745px and below */
-        gap: 15px; /* Adjust gap for header at 745px and below */
-    }
-
-    .ulclul {
-        margin-left: 15px; /* Adjust margin for ulclul at 745px and below */
-    }
-
-    .divheader {
-        column-gap: 15px; /* Adjust column gap for divheader at 745px and below */
-    }
+    /* .section1 */
 
     .section1 {
-        height: 500px; /* Adjust height for section1 at 745px and below */
+    margin-top: 60px;
+    width: 100%;
+    height: 560px;
+    flex-shrink: 0;
     }
-
-    .section2 {
-        padding: 20px; /* Adjust padding for section2 at 745px and below */
-    }
-
-    .section2 {
+    /* section2 */
+    .section2{
+        height: 864px;
+        background-color: #EA904F;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        gap: 24px;
+        margin-top: -300px;
+
     }
+    /* section3 */
 
     .section3 {
-        height: 1600px; /* Adjust height for section3 at 745px and below */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 642px;
+        flex-shrink: 0;
+        background: #402101; 
+        overflow: scroll;
     }
-   .search{
-    opacity: 0;
-   }
-.cover2title{
-    opacity: 0;
+   
+    .latest_products {
+    
+        font-weight: 400;
+        line-height: 26px; 
+        padding: 25px 150px 40px 250px;
+       
+    
+    }
 
-}
-.div_same{
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-}
-.main{
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-}
 
+    /* .section4 */
+
+    .cover2_imagecontainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .cover2_text_container2{
+        position: absolute;
+        margin-top: -330px;
+        margin-left: 180px;
+    }
     footer {
-        padding: 40px 15px; /* Adjust padding for footer at 745px and below */
-        column-gap: 15px; /* Adjust column gap for footer at 745px and below */
-    }
-
-
-
-    .grid_class {
-
+        background: #402101;
+        height: 414px;
         display: flex;
-        flex-direction: column;
-            align-items: center;
-            height: 2000px;
-        }
-    
-    .artworks_icon{
-        opacity: 0;
+        padding: 25px 10px;
+        justify-content: space-between;
     }
-    
-    .eight{
-        opacity: 0;
-     
-    }
-    .seven{
-        opacity: 0;
-     
-    }
-    
-    .six{
-        opacity: 0;
-    
-    }
-    
-    
-    .pages{
-        opacity: 0;
-    
-    }
-    
-    .form-box{
-        margin-top: -10px;
-        padding: 250px 0;
-        margin-left: 10px;
-    }
-    
-    .getin {
-    border:none;
-    background:none;
-    box-shadow:none;
-    display: flex;
-    width: 500px;
-    height: 500px;
-    padding: 24px 30px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    }
-    
-    iframe{
-        width: 300px;
-    height: 220px;
-    flex-shrink: 0;
-    }
-    
-    .map_section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 1248px;
-        padding: 12px 32px;
-    
-    }
-    
-    .map_cont{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .map{
-        width: 50px;
-        height: 100px;
-        margin-left: -250px;
-    }
-    
-    .burger-menu{
-        display: block;
-        margin-right: 1300px;
-    }
-    
-    .responsive-nav li{
-        display: block;
-    }
-      
-    .responsive-nav{
-        padding: 20px;
-        margin-top: 100px;
-        margin-left: -200px;
-    }
-    
-    .burger-menu{
-        opacity: 100;
-    }
-}
 
+    .socials{
+       display: flex;
 
+    }
+ }
